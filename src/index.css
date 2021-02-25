@@ -1,0 +1,243 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family:cursive;
+}
+
+.body{
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+	background: linear-gradient(to top,#a3d8f4, #DACDFF, #FBD9E2, #FFEEC4);
+}
+/******************** MAIN ********************/
+.container {
+  max-width: 85%;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 300px;
+  padding: 40px;
+}
+
+/******************** TITLE ********************/
+.title {
+	text-align: center;
+	position:relative;
+  margin-top: 5%;
+}
+h1{
+	color:#440047;
+	font-size: 470%;
+}
+h3, .paragraph{
+	color:#440047;
+	font-size: 160%;
+}
+
+.bottom-cloud{
+	position:absolute;
+	left:20%;
+	top:75%;
+}
+
+.top-cloud{
+  position:absolute;
+  right: 20%;
+}
+
+.cloud{
+    -webkit-animation-name:              fly;    
+    -webkit-animation-duration:          6s;
+    -webkit-animation-iteration-count:   infinite;
+    -webkit-animation-timing-function:   linear;
+    -webkit-transform-origin:            50% 100%;
+}
+
+@keyframes fly {
+    0%  { -webkit-transform:     translate(2px, 1px) rotate(0deg); }
+    10% { -webkit-transform:     translate(-1px, -2px) rotate(-2deg); }
+    20% { -webkit-transform:     translate(-3px, 0px) rotate(3deg); }
+    30% { -webkit-transform:     translate(0px, 2px) rotate(0deg); }
+    40% { -webkit-transform:     translate(1px, -1px) rotate(1deg); }
+    50% { -webkit-transform:     translate(-1px, 2px) rotate(-1deg); }
+    60% { -webkit-transform:     translate(-3px, 1px) rotate(0deg); }
+    70% { -webkit-transform:     translate(2px, 1px) rotate(-2deg); }
+    80% { -webkit-transform:     translate(-1px, -1px) rotate(4deg); }
+    90% { -webkit-transform:     translate(2px, 2px) rotate(0deg); }
+    100%{ -webkit-transform:     translate(1px, -2px) rotate(-1deg); }
+   }
+
+.btn {
+  display: inline-block;
+  background: #440047;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: inherit;
+}
+
+
+/******************** FLIGHTS ********************/
+.center{
+  text-align: center;
+  color:#440047;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.inputFlights{
+  background: #f4f4f4;
+	justify-content: space-around;
+	align-items: center;
+	margin: 20px;
+  border: 1px solid #440047;
+  border-radius: 5px;
+  max-height: 20px;
+}
+
+.table {
+	width: 80vw;
+	margin: 0 auto;
+	background-color: rgb(217, 204, 209);
+}
+
+tbody {
+	background-color: #F1F1F1;
+}
+
+td {
+	text-align: center;
+  padding: 5px;
+}
+
+/******************** FEEDBACKS ********************/
+.buttonsFeedbacks{
+  position: relative;
+  float: right;
+  padding-bottom:5px ;
+}
+
+.feedback {
+  background: #f4f4f4;
+  margin: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 70%;
+}
+
+.feedback h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.feedbackList {
+  position: relative;
+  float: center;
+}
+
+.modal-wrapper {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 500;
+}
+
+.modal-content {
+  background: white;
+  width: 250px;
+  height: 300px;
+  position: relative;
+  padding-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+  text-align: center;
+}
+
+.isLiked{
+  color: red;
+}
+
+.myCloud{
+margin-top: 20px;
+}
+
+/******************** NAVBAR ********************/
+.linkHomePage {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  position: relative;
+  top: 20px;
+}
+
+.name{
+  position:absolute;
+  bottom: 70px;
+  float:left;
+  width: 100%;
+  font-size: small;
+  left: 80px;
+
+}
+
+.logOut{
+  position:absolute;
+  font-size: small;
+  left: 80px;
+  bottom: 40px;
+}
+
+.loginOut{
+  list-style: none;
+  position:relative;
+  margin-left: 100%;
+} 
+
+.googleButten{
+  position: relative;
+  bottom: 30px;
+  left: 950px;
+}
+.weatherCard{
+  text-align: center;
+  color:#440047;
+  width: 550px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.MuiPaper-root{
+  height: 80px;
+}
+/******************** STATISTICS ********************/
+.card{
+  text-align: center;
+  background-color: rgb(217, 204, 209);
+  border-color:#403c41;
+  color:#440047;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 550px;
+  min-height: 400px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  
+}
+
+@media only screen and (max-width: 990px) {
+  .myCloud, .bottom-cloud{
+    display:none;
+  }
+}
